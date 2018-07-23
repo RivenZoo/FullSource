@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{E127B295-F8A3-458E-BC64-B7188B5872BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientLib", "ClientLib\ClientLib.vcxproj", "{CB3DCFD8-8520-4F1A-B55A-2692E70373B4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientTest", "ClientTest\ClientTest.vcxproj", "{36EFA478-18B0-4C8E-A528-24AE2BAD4614}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CB3DCFD8-8520-4F1A-B55A-2692E70373B4} = {CB3DCFD8-8520-4F1A-B55A-2692E70373B4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E127B295-F8A3-458E-BC64-B7188B5872BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E127B295-F8A3-458E-BC64-B7188B5872BB}.Debug|Win32.Build.0 = Debug|Win32
+		{E127B295-F8A3-458E-BC64-B7188B5872BB}.Release|Win32.ActiveCfg = Release|Win32
+		{E127B295-F8A3-458E-BC64-B7188B5872BB}.Release|Win32.Build.0 = Release|Win32
+		{CB3DCFD8-8520-4F1A-B55A-2692E70373B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB3DCFD8-8520-4F1A-B55A-2692E70373B4}.Debug|Win32.Build.0 = Debug|Win32
+		{CB3DCFD8-8520-4F1A-B55A-2692E70373B4}.Release|Win32.ActiveCfg = Release|Win32
+		{CB3DCFD8-8520-4F1A-B55A-2692E70373B4}.Release|Win32.Build.0 = Release|Win32
+		{36EFA478-18B0-4C8E-A528-24AE2BAD4614}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36EFA478-18B0-4C8E-A528-24AE2BAD4614}.Debug|Win32.Build.0 = Debug|Win32
+		{36EFA478-18B0-4C8E-A528-24AE2BAD4614}.Release|Win32.ActiveCfg = Release|Win32
+		{36EFA478-18B0-4C8E-A528-24AE2BAD4614}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
