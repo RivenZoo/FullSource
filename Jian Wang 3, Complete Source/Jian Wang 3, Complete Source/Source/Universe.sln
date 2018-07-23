@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EDA75D9-8B14-4B3F-B563-A8CEF763F0DF}"
 	ProjectSection(SolutionItems) = preProject
 		localtestrun.testrunconfig = localtestrun.testrunconfig
@@ -187,11 +189,15 @@ Global
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Client|Mixed Platforms.Build.0 = Debug|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Client|Win32.ActiveCfg = Debug|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Client|Win32.Build.0 = Debug|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Any CPU.ActiveCfg = Debug_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Mixed Platforms.ActiveCfg = Debug_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Mixed Platforms.Build.0 = Debug_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Win32.ActiveCfg = Debug_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Win32.Build.0 = Debug_Performance_Analyze|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Any CPU.ActiveCfg = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Any CPU.Build.0 = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Any CPU.Deploy.0 = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Mixed Platforms.ActiveCfg = Debug_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Mixed Platforms.Build.0 = Debug_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Mixed Platforms.Deploy.0 = Debug_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Win32.ActiveCfg = Debug_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Win32.Build.0 = Debug_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Design|Win32.Deploy.0 = Debug_DevTest|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Server|Any CPU.ActiveCfg = Debug|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Server|Mixed Platforms.ActiveCfg = Debug|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Debug_Server|Win32.ActiveCfg = Debug|Win32
@@ -206,11 +212,15 @@ Global
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Client|Mixed Platforms.Build.0 = Release|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Client|Win32.ActiveCfg = Release|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Client|Win32.Build.0 = Release|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Any CPU.ActiveCfg = Release_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Mixed Platforms.ActiveCfg = Release_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Mixed Platforms.Build.0 = Release_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Win32.ActiveCfg = Release_Performance_Analyze|Win32
-		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Win32.Build.0 = Release_Performance_Analyze|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Any CPU.ActiveCfg = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Any CPU.Build.0 = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Any CPU.Deploy.0 = Template|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Mixed Platforms.ActiveCfg = Release_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Mixed Platforms.Build.0 = Release_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Mixed Platforms.Deploy.0 = Release_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Win32.ActiveCfg = Release_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Win32.Build.0 = Release_DevTest|Win32
+		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Design|Win32.Deploy.0 = Release_DevTest|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Server|Any CPU.ActiveCfg = Release|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Server|Mixed Platforms.ActiveCfg = Release|Win32
 		{90AF2153-D437-4727-BDAA-A324DF7E39E8}.Release_Server|Win32.ActiveCfg = Release|Win32
@@ -1366,6 +1376,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {151B5643-208B-4D50-867B-9671AB0CB909}
 	EndGlobalSection
 	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
 		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
