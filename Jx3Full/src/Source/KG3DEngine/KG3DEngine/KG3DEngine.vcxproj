@@ -149,25 +149,25 @@
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_AutoTest|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DevTest|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_AutoTest|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DevTest|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
-    <IncludePath>$(SolutionDir)base\base\Include;$(SolutionDir)base\base\Include\Engine;$(WindowsSdk_71A_IncludePath);$(SolutionDir)..\..\DirectX\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(WindowsSdk_71A_IncludePath);$(ProjectDir)..\..\base\base\Include;$(ProjectDir)..\..\base\base\Include\Engine;$(ProjectDir)..\..\..\..\DirectX\include;$(ProjectDir)..\..\..\..\Include\KG3DEngine;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

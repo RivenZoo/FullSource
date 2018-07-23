@@ -1,5 +1,5 @@
 #pragma once
-#include "../../../Include/kg3dengine/KG3DInterface.h"
+#include "KG3DInterface.h"
 #include "Scene/KG3DCamera.h"
 #include "IEEditor.h"
 #include "KG3DStructs.h"
