@@ -151,8 +151,7 @@ inline ULONG safe_release(T& p, LPCSTR szFile, size_t nLine)
 //</d3d include>
 
 //<third part include>
-// TODO: Find this file or create it from source code cpp
-//#include "NxPhysics.h"
+#include "NxPhysics.h"
 //</third part include>
 
 //<memory checking>
@@ -215,8 +214,7 @@ inline ULONG safe_release(T& p, LPCSTR szFile, size_t nLine)
 //</engine helpers>
 
 //<engine global includes>
-// TODO: Fix this
-//#include "KG3DTypes.h"
+#include "KG3DTypes.h"
 #include "KG3DEngineTypes.h"
 //</engine global includes>
 
