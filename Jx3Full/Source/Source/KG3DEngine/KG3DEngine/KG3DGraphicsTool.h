@@ -258,6 +258,8 @@ public:
 						TCHAR* strFont,
 						TCHAR* strText, DWORD dwFlags);
 
+	HRESULT DrawBox(D3DXVECTOR3 &vMin, D3DXVECTOR3 &vMax, D3DCOLOR color, BOOL bEnableZ);
+
     HRESULT SetCamera( KG3DCamera *pCamera );
     KG3DCamera* GetCamera();
 

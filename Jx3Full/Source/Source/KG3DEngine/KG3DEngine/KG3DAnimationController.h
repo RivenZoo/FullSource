@@ -80,7 +80,7 @@ public:
     virtual HRESULT RegistereEventHandler(IKG3DAnimationEventHandler* pHandler);
     virtual HRESULT UnregisterEventHandler(IKG3DAnimationEventHandler* pHandler);
     virtual DWORD64 GetMotionExtraInfo();
-    virtual void SetMotionExtraInfo(DWORD dwMotionExtraInfo);
+	virtual void SetMotionExtraInfo(DWORD64 dwMotionExtraInfo);
     virtual IKG3DModel* GetModel();
 
     virtual IKG3DAnimationEventHandler* GetEventHandler();

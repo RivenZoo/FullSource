@@ -276,7 +276,7 @@ DWORD KG3DAnimationController::GetMotionExtraInfo()
     return m_dwExtraMotionTypeInfo;
 }
 
-void KG3DAnimationController::SetMotionExtraInfo(DWORD dwMotionExtraInfo)
+void KG3DAnimationController::SetMotionExtraInfo(DWORD64 dwMotionExtraInfo)
 {
     m_dwExtraMotionTypeInfo = dwMotionExtraInfo;
 }
