@@ -6,15 +6,19 @@
 #include <string>
 
 using TagSFXCallBackExtraInfo = std::map<std::string, std::function<void()>>;
-enum 
+
+enum enuMotionTagBlockType
 {
 	MTBT_DAMAGEPERCENTAGE,
 	MTBT_MISSILE,
+	MTBT_FACEMOTION,
+	
 };
 struct TagMotionCallBackExtraInfo
 {
-	void fData;
+	std::vector<void> fData;
 	DWORD dwData;
+	enuMotionTagBlockType Type;
 };
 
 enum class enuAnimationControllerPriority
