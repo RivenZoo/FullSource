@@ -1046,6 +1046,50 @@ protected:
 	HRESULT _LoadFromFile(const char cszFileName[], 
 		unsigned uFileNameHash, 
 		unsigned uOption);
+
+	virtual void SetOutline(int, DWORD);
+	virtual void SetCaptionPosition(const D3DXVECTOR3 &, BOOL);
+	virtual float GetCaptionFloorHeight(void);
+	virtual int GetAnimationOffset(DWORD);
+	virtual void SetTranslation(const D3DXVECTOR3 *);
+	virtual void SetRotation(const D3DXQUATERNION *);
+	virtual void SetScaling(const D3DXVECTOR3 *);
+	virtual HRESULT LoadMtlInsPackFromFile(LPCSTR, DWORD);
+	virtual HRESULT SetBannerFont(LPCWSTR);
+
+	// Inherited via CKG3DConnectionPoint
+	virtual HRESULT ExecuteCommand(LPCTSTR szCommand, LPCTSTR szRet) override;
+	virtual HRESULT SetImportance(float fValue) override;
+	virtual HRESULT SetCameraShake(BOOL bCameraShake) override;
+	virtual HRESULT RecalBBox() override;
+	virtual void SetRuntimeEffect(enuRuntimeShaderFlag Type, void * pExtraData) override;
+	virtual void SetRenderForShadow(BOOL bRenderForShadow) override;
+	virtual void DisableAnimationTag(int nFlag) override;
+	virtual void DisableMeteor() override;
+	virtual void EnableSfxSoundTag(BOOL bEnable) override;
+	virtual void EnableMotionBlur(BOOL bEnable) override;
+	virtual void EnableWaterEffect(BOOL bEnable) override;
+	virtual DWORD CalcPixByDis(float fDis) override;
+	virtual void SetPerfVisible(bool visible) override;
+	virtual HRESULT GetFaceDefinition(IKG3DFaceDefinition ** ppRetFaceDef) override;
+	virtual HRESULT SetFaceDefinition(const KG3D_CHAR_ARRAY & Param, const int & nRoleType, const KG3D_FACE_DECAL_ARRAY & vDecalDefinition, const int & nFacePartID = 0, BOOL bForceReloadFromFile = FALSE) override;
+	virtual HRESULT SetFaceTextureResolution(enuFaceTextureResolution eResoluton) override;
+	virtual HRESULT LoadFaceDefinitionINI(const char * szFileName) override;
+	virtual HRESULT SetFaceBoneParams(const KG3D_CHAR_ARRAY & vParams) override;
+	virtual HRESULT SetFaceDecals(const int & nRoleType, const KG3D_FACE_DECAL_ARRAY & vDecalDefinition) override;
+	virtual HRESULT SetFacePartID(const int & nFacePartID) override;
+	virtual HRESULT GetFacePartID(int * pFacePartID) override;
+	virtual HRESULT SetSREntityModelByClient(BOOL bSREntityModelByClient) override;
+	virtual HRESULT SetSREntityModelRayIntersectUseSkin(BOOL bSREntityModelRayIntersectUseSkin) override;
+	virtual HRESULT InitLookAtController() override;
+	virtual HRESULT UninitLookAtController() override;
+	virtual HRESULT SetLookAtControllerEnabled(BOOL bEnabled) override;
+	virtual HRESULT SetLookAtTarget(const D3DXVECTOR3 & vecTargetWorldPos) override;
+	virtual HRESULT SetLookAtLocalTarget(const D3DXVECTOR3 & vecTargetLocalPos) override;
+	virtual HRESULT SetUpDynamicsBone(IKG3DModel * pSpinModel, LPCTSTR szBoneName) override;
+	virtual void DeleteDynamicsBone(LPCTSTR szBoneName) override;
+	virtual HRESULT SetOBJPropertyByType(enuModelType eModelType) override;
+	virtual void SetDetailColor(int index1, int index2, int index3) override;
 };
 
 #ifdef KG3DENGINE_DISABLE_MULTITHREAD

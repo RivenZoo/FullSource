@@ -4107,6 +4107,172 @@ VOID KG3DEngineManager::RuntimeTest()
 		_ASSERTE(this->GetRenderOption(RENDER_ALL));
 	}
 }
+BOOL KG3DEngineManager::AttachEventHandle(void * pEventCommon, void * pLogicEventMgr, void * pRepresentEventMgr)
+{
+	return 0;
+}
+BOOL KG3DEngineManager::SetFluencyParam(KFluencyParam * pFluencyParam)
+{
+	return 0;
+}
+KFluencyParam * KG3DEngineManager::GetFluencyParam()
+{
+	return nullptr;
+}
+IKG3DModelManager * KG3DEngineManager::Get3DModelTableEx()
+{
+	return nullptr;
+}
+IKG3DSoundBallTable * KG3DEngineManager::GetSoundPolygonTable()
+{
+	return nullptr;
+}
+IKG3DSoundBallTable * KG3DEngineManager::GetSoundReverbTable()
+{
+	return nullptr;
+}
+int KG3DEngineManager::GetVideoDll(HMODULE * pVideoDLL)
+{
+	return 0;
+}
+IKG3DDynamicWeather * KG3DEngineManager::GetDynamicWeather()
+{
+	return nullptr;
+}
+IKG3DFaceMakerManager * KG3DEngineManager::GetFaceMakerManager()
+{
+	return nullptr;
+}
+IKG3DMeshMergeManager * KG3DEngineManager::GetMeshMergeManager()
+{
+	return nullptr;
+}
+IKG3DPSFilterManager * KG3DEngineManager::GetPSFilterManager()
+{
+	return nullptr;
+}
+IKG3DPerformanceTweaker * KG3DEngineManager::GetPerformanceTweaker()
+{
+	return nullptr;
+}
+IKG3DSceneResponseManager * KG3DEngineManager::GetSceneResponseManager()
+{
+	return nullptr;
+}
+HRESULT KG3DEngineManager::AddOutputWindow(TCHAR szName[], HWND hWnd, DWORD dwType, DWORD_PTR dwOption)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::RemoveOutputWindow(int nID)
+{
+	return E_NOTIMPL;
+}
+void KG3DEngineManager::SetPaintThreadID(DWORD dwThreadID)
+{
+}
+void KG3DEngineManager::SetRenderThreadPaint(BOOL bIsRenderThread)
+{
+}
+BOOL KG3DEngineManager::IsDeviceLost() const
+{
+	return 0;
+}
+HRESULT KG3DEngineManager::ResetDeveice()
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::DoGlobalPreLoad()
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::UnLoadGlobalPreLoad()
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::EnableTextureAutoScale(BOOL bEnable)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetPostRenderDoFDis(FLOAT fDis)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetPostRenderDoFDis(FLOAT * pfDis)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetPostRenderDoFNear(FLOAT fNear)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetPostRenderDoFNear(FLOAT * pfNear)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetPostRenderDoFFar(FLOAT fFar)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetPostRenderDoFFar(FLOAT * pfFar)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetDofUseCameraParam(BOOL bUseCameraParam)
+{
+	return E_NOTIMPL;
+}
+BOOL KG3DEngineManager::IsDofUseCameraParam()
+{
+	return 0;
+}
+HRESULT KG3DEngineManager::SetHueScale(IKG3DScene * pScene, FLOAT fHueScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetHueBias(IKG3DScene * pScene, FLOAT fHueBias)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetSaturationScale(IKG3DScene * pScene, FLOAT fSaturationScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetSaturationBias(IKG3DScene * pScene, FLOAT fSaturationBias)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetIntensityScale(IKG3DScene * pScene, FLOAT fIntensityScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::SetIntensityBias(IKG3DScene * pScene, FLOAT fIntensityBias)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetHueScale(IKG3DScene * pScene, FLOAT & fHueScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetHueBias(IKG3DScene * pScene, FLOAT & fHueBias)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetSaturationScale(IKG3DScene * pScene, FLOAT & fSaturationScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetSaturationBias(IKG3DScene * pScene, FLOAT & fSaturationBias)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetIntensityScale(IKG3DScene * pScene, FLOAT & fIntensityScale)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DEngineManager::GetIntensityBias(IKG3DScene * pScene, FLOAT & fIntensityBias)
+{
+	return E_NOTIMPL;
+}
 #endif
 HRESULT KG3DEngineManager::GetEngineCaps( KG3DEngineCaps* pCaps )
 {

@@ -368,6 +368,50 @@ private:
 		em_init_finished = 1,
 	};
 	std::bitset<sizeof(DWORD)>	m_States;
+
+	// Inherited via IEKG3DEngineManager
+	virtual BOOL AttachEventHandle(void * pEventCommon, void * pLogicEventMgr, void * pRepresentEventMgr) override;
+	virtual BOOL SetFluencyParam(KFluencyParam * pFluencyParam) override;
+	virtual KFluencyParam * GetFluencyParam() override;
+	virtual IKG3DModelManager * Get3DModelTableEx() override;
+	virtual IKG3DSoundBallTable * GetSoundPolygonTable() override;
+	virtual IKG3DSoundBallTable * GetSoundReverbTable() override;
+	virtual int GetVideoDll(HMODULE * pVideoDLL) override;
+	virtual IKG3DDynamicWeather * GetDynamicWeather() override;
+	virtual IKG3DFaceMakerManager * GetFaceMakerManager() override;
+	virtual IKG3DMeshMergeManager * GetMeshMergeManager() override;
+	virtual IKG3DPSFilterManager * GetPSFilterManager() override;
+	virtual IKG3DPerformanceTweaker * GetPerformanceTweaker() override;
+	virtual IKG3DSceneResponseManager * GetSceneResponseManager() override;
+	virtual HRESULT AddOutputWindow(TCHAR szName[], HWND hWnd, DWORD dwType, DWORD_PTR dwOption) override;
+	virtual HRESULT RemoveOutputWindow(int nID) override;
+	virtual void SetPaintThreadID(DWORD dwThreadID) override;
+	virtual void SetRenderThreadPaint(BOOL bIsRenderThread) override;
+	virtual BOOL IsDeviceLost() const override;
+	virtual HRESULT ResetDeveice() override;
+	virtual HRESULT DoGlobalPreLoad() override;
+	virtual HRESULT UnLoadGlobalPreLoad() override;
+	virtual HRESULT EnableTextureAutoScale(BOOL bEnable) override;
+	virtual HRESULT SetPostRenderDoFDis(FLOAT fDis) override;
+	virtual HRESULT GetPostRenderDoFDis(FLOAT * pfDis) override;
+	virtual HRESULT SetPostRenderDoFNear(FLOAT fNear) override;
+	virtual HRESULT GetPostRenderDoFNear(FLOAT * pfNear) override;
+	virtual HRESULT SetPostRenderDoFFar(FLOAT fFar) override;
+	virtual HRESULT GetPostRenderDoFFar(FLOAT * pfFar) override;
+	virtual HRESULT SetDofUseCameraParam(BOOL bUseCameraParam) override;
+	virtual BOOL IsDofUseCameraParam() override;
+	virtual HRESULT SetHueScale(IKG3DScene * pScene, FLOAT fHueScale) override;
+	virtual HRESULT SetHueBias(IKG3DScene * pScene, FLOAT fHueBias) override;
+	virtual HRESULT SetSaturationScale(IKG3DScene * pScene, FLOAT fSaturationScale) override;
+	virtual HRESULT SetSaturationBias(IKG3DScene * pScene, FLOAT fSaturationBias) override;
+	virtual HRESULT SetIntensityScale(IKG3DScene * pScene, FLOAT fIntensityScale) override;
+	virtual HRESULT SetIntensityBias(IKG3DScene * pScene, FLOAT fIntensityBias) override;
+	virtual HRESULT GetHueScale(IKG3DScene * pScene, FLOAT & fHueScale) override;
+	virtual HRESULT GetHueBias(IKG3DScene * pScene, FLOAT & fHueBias) override;
+	virtual HRESULT GetSaturationScale(IKG3DScene * pScene, FLOAT & fSaturationScale) override;
+	virtual HRESULT GetSaturationBias(IKG3DScene * pScene, FLOAT & fSaturationBias) override;
+	virtual HRESULT GetIntensityScale(IKG3DScene * pScene, FLOAT & fIntensityScale) override;
+	virtual HRESULT GetIntensityBias(IKG3DScene * pScene, FLOAT & fIntensityBias) override;
 };
 
 //////////////////////////////////////////////////////////////////////////

@@ -1191,6 +1191,26 @@ HRESULT KG3DEngineOptionCaps::GetShaderModelCaps()
     return hResult;
 }
 
+HRESULT KG3DEngineOptionCaps::UpdateCaps(const KG3DEngineOption & EngineOption)
+{
+	return E_NOTIMPL;
+}
+
+const KG3D_ENGINE_OPTION_CAPS * KG3DEngineOptionCaps::GetCaps()
+{
+	return nullptr;
+}
+
+BOOL KG3DEngineOptionCaps::GetEnableScaleOutput()
+{
+	return 0;
+}
+
+BOOL KG3DEngineOptionCaps::GetScaleOutputSmooth()
+{
+	return 0;
+}
+
 std::vector<int>* KG3DEngineOptionCaps::GetShaderModel()
 {
     return &m_vecShaderModel;

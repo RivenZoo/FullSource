@@ -35,7 +35,7 @@ public :
 	virtual DWORD GetPlayType();
 	virtual HRESULT RegistereEventHandler(IKG3DAnimationEventHandler* pHandler);
 	virtual HRESULT UnregisterEventHandler(IKG3DAnimationEventHandler* pHandler);
-	virtual DWORD GetMotionExtraInfo();
+	virtual DWORD64 GetMotionExtraInfo();
 	virtual void SetMotionExtraInfo(DWORD dwMotionExtraInfo);
 	virtual IKG3DModel* GetModel();
 	virtual IKG3DAnimationEventHandler* GetEventHandler();
@@ -76,7 +76,7 @@ public :
     LPCSTR GetAnimationFileName();
 	virtual HRESULT RegistereEventHandler(IKG3DAnimationEventHandler* pHandler);
 	virtual HRESULT UnregisterEventHandler(IKG3DAnimationEventHandler* pHandler);
-	virtual DWORD GetMotionExtraInfo();
+	virtual DWORD64 GetMotionExtraInfo();
 	virtual void SetMotionExtraInfo(DWORD dwMotionExtraInfo);
 	virtual IKG3DModel* GetModel();
 	virtual IKG3DAnimationEventHandler* GetEventHandler();

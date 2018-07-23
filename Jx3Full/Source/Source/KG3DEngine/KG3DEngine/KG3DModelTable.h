@@ -48,7 +48,15 @@ public:
 		unsigned uFileNameHash, 
 		unsigned uOption, 
 		IKG3DResourceBase **ppRetResource);
-
+	virtual HRESULT LoadResourceFromFile(const char[], unsigned int, unsigned int, HANDLE *);
+	virtual HRESULT LoadResourceFromFile(const char[], unsigned int, unsigned int, IKG3DResourceBase **, bool, ResNodeState **);
+	virtual HRESULT LoadAnimationFromFile(const char[], void **);
+	virtual HRESULT UnloadAnimation(void *);
+	virtual HRESULT LoadTagAnimationFromFile(const char[], void **);
+	virtual HRESULT UnloadTagAnimation(void *);
+	virtual MODEL_LOAD_STATE GetResourceLoadState(HANDLE);
+	virtual HRESULT GetResourceByHandle(HANDLE, IKG3DResourceBase **);
+	virtual void CloseResourceHandle(HANDLE);
 };
 
 class KG3DModelSTCache

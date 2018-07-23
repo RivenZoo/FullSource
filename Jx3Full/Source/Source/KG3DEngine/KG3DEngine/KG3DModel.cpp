@@ -1531,7 +1531,7 @@ void KG3DModel::UpdateChildModel()
 		i != UpdateList.end(); 
 		i++)
 	{
-		KG3DModelLod& pChild = *i; 
+		KG3DModelLod& pChild = *i;
 		KG3DModel* pLast = pChild.pModelCurrent;
 
 		if(pChild.pModelCurrent)
@@ -2788,6 +2788,124 @@ void KG3DModel::SetScaling(D3DXVECTOR3 *pValue)
 //	ComputeBBox();
 	if (bIsPassRecord)
 		g_cRecorder.UnLock();    
+}
+HRESULT KG3DModel::ExecuteCommand(LPCTSTR szCommand, LPCTSTR szRet)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetImportance(float fValue)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetCameraShake(BOOL bCameraShake)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::RecalBBox()
+{
+	return E_NOTIMPL;
+}
+void KG3DModel::SetRuntimeEffect(enuRuntimeShaderFlag Type, void * pExtraData)
+{
+}
+void KG3DModel::SetRenderForShadow(BOOL bRenderForShadow)
+{
+}
+void KG3DModel::DisableAnimationTag(int nFlag)
+{
+}
+void KG3DModel::DisableMeteor()
+{
+}
+void KG3DModel::EnableSfxSoundTag(BOOL bEnable)
+{
+}
+void KG3DModel::EnableMotionBlur(BOOL bEnable)
+{
+}
+void KG3DModel::EnableWaterEffect(BOOL bEnable)
+{
+}
+DWORD KG3DModel::CalcPixByDis(float fDis)
+{
+	return 0;
+}
+void KG3DModel::SetPerfVisible(bool visible)
+{
+}
+HRESULT KG3DModel::GetFaceDefinition(IKG3DFaceDefinition ** ppRetFaceDef)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetFaceDefinition(const KG3D_CHAR_ARRAY & Param, const int & nRoleType, const KG3D_FACE_DECAL_ARRAY & vDecalDefinition, const int & nFacePartID = 0, BOOL bForceReloadFromFile = FALSE)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetFaceTextureResolution(enuFaceTextureResolution eResoluton)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::LoadFaceDefinitionINI(const char * szFileName)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetFaceBoneParams(const KG3D_CHAR_ARRAY & vParams)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetFaceDecals(const int & nRoleType, const KG3D_FACE_DECAL_ARRAY & vDecalDefinition)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetFacePartID(const int & nFacePartID)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::GetFacePartID(int * pFacePartID)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetSREntityModelByClient(BOOL bSREntityModelByClient)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetSREntityModelRayIntersectUseSkin(BOOL bSREntityModelRayIntersectUseSkin)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::InitLookAtController()
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::UninitLookAtController()
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetLookAtControllerEnabled(BOOL bEnabled)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetLookAtTarget(const D3DXVECTOR3 & vecTargetWorldPos)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetLookAtLocalTarget(const D3DXVECTOR3 & vecTargetLocalPos)
+{
+	return E_NOTIMPL;
+}
+HRESULT KG3DModel::SetUpDynamicsBone(IKG3DModel * pSpinModel, LPCTSTR szBoneName)
+{
+	return E_NOTIMPL;
+}
+void KG3DModel::DeleteDynamicsBone(LPCTSTR szBoneName)
+{
+}
+HRESULT KG3DModel::SetOBJPropertyByType(enuModelType eModelType)
+{
+	return E_NOTIMPL;
+}
+void KG3DModel::SetDetailColor(int index1, int index2, int index3)
+{
 }
 void KG3DModel::SetScalingRotation(D3DXQUATERNION* pValue)
 {

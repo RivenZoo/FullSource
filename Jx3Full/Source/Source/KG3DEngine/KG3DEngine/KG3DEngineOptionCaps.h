@@ -168,6 +168,12 @@ private:
     HRESULT GetCurveCMYKCaps(D3DCAPS9 D3DCaps, KG3DEngineOption& EngineOption);
 
     HRESULT GetShaderModelCaps();
+
+	// Inherited via IKG3DEngineOptionCaps
+	virtual HRESULT UpdateCaps(const KG3DEngineOption & EngineOption) override;
+	virtual const KG3D_ENGINE_OPTION_CAPS * GetCaps() override;
+	virtual BOOL GetEnableScaleOutput() override;
+	virtual BOOL GetScaleOutputSmooth() override;
 };
 
 #endif  // _KG3DENGINEOPTIONCAPS_H_
