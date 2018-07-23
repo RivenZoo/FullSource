@@ -1,0 +1,14 @@
+KG_GoddessD.exe
+KG_GoddessD.exe --.version=2
+KG_GoddessD.exe --Version.=2
+KG_GoddessD.exe -- Version.version=2
+KG_GoddessD.exe --Version .version=2
+KG_GoddessD.exe --Version. version=2
+KG_GoddessD.exe --Version.version =2
+KG_GoddessD.exe --Version=2
+KG_GoddessD.exe --Version.version.version=2
+KG_GoddessD.exe -Version.version=2
+KG_GoddessD.exe ---Version.version=2
+KG_GoddessD.exe - -Version.version=2
+KG_GoddessD.exe --Version.version
+KG_GoddessD.exe --Version.version==2

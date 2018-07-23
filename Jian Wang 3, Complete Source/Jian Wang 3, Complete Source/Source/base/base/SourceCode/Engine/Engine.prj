@@ -1,0 +1,85 @@
+[Include]
+/usr/include
+.
+../../Include
+../../Include/Engine
+
+[Config Debug]
+Product		Lib ../../Lib/Linux/EngineD
+Options		Debug
+Defines		__linux; _STANDALONE; _SERVER; C_C_VERSION; LUA_V_5; _DEBUG
+ObjDir		LDebug
+LibDir		
+Libraries	
+
+[Config Release]
+Product		Lib ../../Lib/Linux/Engine
+Options		Release
+Defines		__linux; _STANDALONE; _SERVER; C_C_VERSION; LUA_V_5
+ObjDir		LRelease
+LibDir		
+Libraries	
+
+
+[Source]
+Cryptography/EDOneTimePad.cpp
+Cryptography/KSG_MD5_String.cpp
+Cryptography/md5.cpp
+File/AloneFile.cpp
+File/File.cpp
+File/FilePath.cpp
+File/IniFile.cpp
+File/KG_IniFile.cpp
+File/PackFile.cpp
+File/TabFile.cpp
+File/TabFileWritable.cpp
+File/XPackFile.cpp
+File/XPackList.cpp
+Misc/Debug.cpp
+Misc/KLogFile.cpp
+Misc/KMemBase.cpp
+Misc/KMemStack.cpp
+Misc/KMutex.cpp
+Misc/KOccupyList.cpp
+Misc/KPolygon.cpp
+Misc/KSG_StringProcess.cpp
+Misc/KThread.cpp
+Misc/Random.cpp
+Misc/Timer.cpp
+Misc/KNode.cpp
+Misc/KList.cpp
+Misc/CRC32.c
+Text/Text.cpp
+Text/KTextFilter.cpp
+Cache/ObjCache.cpp
+Lua/KLuaWrap.cpp
+Lua/lua_tinker.cpp
+Ucl/alloc.c
+Ucl/io.c
+Ucl/n2b_99.c
+Ucl/n2b_d.c
+Ucl/n2b_ds.c
+Ucl/n2b_to.c
+Ucl/n2d_99.c
+Ucl/n2d_d.c
+Ucl/n2d_ds.c
+Ucl/n2d_to.c
+Ucl/n2e_99.c
+Ucl/n2e_d.c
+Ucl/n2e_ds.c
+Ucl/n2e_to.c
+Ucl/ucl_crc.c
+Ucl/ucl_dll.c
+Ucl/ucl_init.c
+Ucl/ucl_ptr.c
+Ucl/ucl_str.c
+Ucl/ucl_util.c
+Misc/KGLog.cpp
+Misc/KGCRT.cpp
+Misc/KG_Time.cpp
+Misc/inoutmac.cpp
+Misc/KG_CreateGUID.cpp
+Misc/KSemaphore.cpp
+Misc/KMemory.cpp
+
+

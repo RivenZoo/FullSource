@@ -1,0 +1,90 @@
+1.FilePath.cpp
+@brief 对文件路径的一些操作以及字符串，hash等的一些操作函数
+---PreCompile.h
+	@brief 
+	--- ../../Include/CommonDefine.h
+	--- EngineBase.h
+		@brief #define C_ENGINE_API extern "C"
+---XPackList.h
+	@brief 类KPackList的定义
+	@pos SourceCode/Engine/File
+	|--- XPackFile.h
+		@brief 类XPackFile的定义
+		@pos SourceCode/Engine/File
+		--- Mutex.h
+	
+		---PackDef.h
+		--- ./AloneFile.h
+			@brief 类KAloneFile的定义
+			@pos SourceCode/Engine/File
+			|---File.h
+				@brief @brief IFile类的定义以及FilePath.cpp中全局函数g_xxx的申明
+				@pos Include/Engine
+			|---RecycleBin.h
+	
+	
+File.h
+@brief IFile类的定义以及FilePath.cpp中全局函数g_xxx的申明
+
+2. File.cpp
+@brief Engine文件模块接口函数实现，包括文件的操作和UCL函数的实现，申明在File.h
+@pos SourceCode/Engine/File
+|---PreCompile.h
+|---./AloneFile.h
+|---./PackFile.h
+|---./XPackFile.h
+|---../Ucl/ucl.h
+|---KGlog.h
+|---Debug.h
+
+补充：
+KPackList g_EnginePackList;定义在XPackList.cpp，XPackList.h中申明为extern
+详细：
+(1)KGlog.h
+@brief 
+@pos 
+(2)Debug.h
+
+
+3. IniFile.cpp
+@brief 主要是对KIniFile类中的结构进行的一些操作，链表的构造、消除以及更新等一些操作，还包括对某些节点的一些操作等
+@pos SourceCode/Engine/File
+|---Precompile.h
+|---KGPublic.h
+|---KGCRT.h
+|---File.h
+|---IniFile.h
+	@brief 类KIniFile:public IIniFile的定义，类定义中包括KEYNODE和SECNODE的定义等，作用：构建PACK List时用到
+	@pos SourceCode/Engine/File
+	|---FileType.h
+		@brief 接口 类IIniFile和类ITabFile的定义，函数为虚函数，与IniFile.h中相同
+		@pos Include/Engine
+		|---EngineBase.h
+		|---CommonDefine.h
+	|---RecycleBin.h
+|---KSG_StringProcess.h
+
+4. AloneFile.cpp
+@brief Alone函数的定义，主要是对文件的一些操作，只是封装到类中去了而已
+@pos SourceCode/Engine/File
+|---Precompile.h
+|---AloneFile.h
+
+5. KG_IniFile.cpp
+@brief 
+@pos SourceCode/Engine/File
+|---Precompile.h
+|---KGPublic.h
+	@brief 一些宏的定义。eg: KG_PROCESS_ERROR
+	@pos Include\
+	|---KGError.h
+|---KG_IniFile.h
+	@brief 类KG_IniFile:public IIniFile的定义，类中成员函数为需函数，和IniFile.h中的函数一样
+	@pos SourceCode/Engine/File
+	|---Engine/FileType.h
+		@brief 同IniFile.cpp中
+		@pos Include/Engine
+		|---EngineBase.h
+		|---CommonDefine.h
+			@brief 一些宏的定义。eg：SAFE_FREE，SAFE_DELETE，g_StrLower等
+			@pos Include/

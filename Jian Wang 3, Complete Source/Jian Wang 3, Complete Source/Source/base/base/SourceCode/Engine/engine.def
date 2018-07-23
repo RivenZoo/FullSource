@@ -1,0 +1,63 @@
+EXPORTS
+	EDOneTimePad_Encipher
+	EDOneTimePad_Decipher
+
+	g_DebugLog
+	g_MessageBox
+	g_AssertFailed
+
+	g_Random
+	g_RandomSeed
+	g_GetRandomSeed
+
+	g_OpenFile
+	g_CreateFile
+	g_OpenIniFile
+	g_CreateIniFile
+	g_OpenTabFile
+	g_CreateTabFile
+
+	g_SetFindFileMode
+	g_LoadPackageFiles
+	g_ClearPackageFiles
+
+	g_SetRootPath
+	g_GetRootPath
+	g_SetFilePath
+	g_GetFilePath
+	g_GetFullPath
+	g_GetHalfPath
+	g_GetPackPath
+	g_CreatePath
+	g_IsFileExist
+	g_StringHash
+	g_StringLowerHash
+	g_UnitePathAndName
+	g_ChangeFileExt
+	g_ExtractFileName
+	g_ExtractFilePath
+
+	CD_LCU_I
+	CD_LCU_C
+	CD_LCU_D
+
+	TGetSecondVisibleCharacterThisLine
+	TIsCharacterNotAlowAtLineHead
+	TGetLimitLenString
+	TGetLimitLenEncodedString
+	TSplitString
+	TSplitEncodedString
+	TGetEncodeStringLineHeadPos
+	TEncodeText
+	TFilterEncodedText
+	TRemoveCtrlInEncodedText
+	TGetEncodedTextLineCount
+	TFindSpecialCtrlInEncodedText
+	TClearSpecialCtrlInEncodedText
+	TGetEncodedTextOutputLenPos
+	TGetEncodedTextEffectCtrls
+	TAdviseEngine
+	TUnAdviseEngine
+
+	KSG_StringGetInt
+	KSG_StringSkipSymbol
