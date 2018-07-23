@@ -2167,26 +2167,26 @@ struct SoundReverbData :  public SoundDataBase
 #define BLOCK_LIST_STATE_DATAOK   1
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////因为是编辑器用的``故把下面结构体移到IEEditorType.h里去 Modify by huangjinshou 2011-10-11
-//enum
-//{
-//	EM_SELMASK_MODEL       = (1 << 0),
-//	EM_SELMASK_MODELSET    = (1 << 1),       
-//	EM_SELMASK_SPEEDTREE   = (1 << 2),
-//	EM_SELMASK_SFX		   = (1 << 3),
-//	EM_SELMASK_OBJSET      = (1 << 4),
-//	EM_SELMASK_LOGICOBJ    = (1 << 5),
-//	EM_SELMASK_NODE        = (1 << 6),
-//	EM_SELMASK_SOUNDBALL   = (1 << 7),
-//	EM_SELMASK_NOSMALLOBJ  = (1 << 8),//不选择小物件
-//	EM_SELMASK_NOBIGOBJ    = (1 << 9), //不选择大物件
-//	EM_SELMASK_CLIENT_SELABLE = (1 << 10), //客户端的选取屏蔽
-//	
-//	EM_SELMASK_ALL = EM_SELMASK_MODEL|EM_SELMASK_MODELSET|EM_SELMASK_SPEEDTREE|EM_SELMASK_SFX|EM_SELMASK_OBJSET|
-//				     EM_SELMASK_LOGICOBJ|EM_SELMASK_NODE |EM_SELMASK_SOUNDBALL,
-//    EM_SELMASK_NONE = (1 << 31) // 强制关闭所有的选择过滤，所有物件都能选中
-//	//0xffffffff & (~(EM_SELMASK_NOSMALLOBJ)) & (~(EM_SELMASK_NOBIGOBJ)),
-//
-//};
+enum
+{
+	EM_SELMASK_MODEL       = (1 << 0),
+	EM_SELMASK_MODELSET    = (1 << 1),       
+	EM_SELMASK_SPEEDTREE   = (1 << 2),
+	EM_SELMASK_SFX		   = (1 << 3),
+	EM_SELMASK_OBJSET      = (1 << 4),
+	EM_SELMASK_LOGICOBJ    = (1 << 5),
+	EM_SELMASK_NODE        = (1 << 6),
+	EM_SELMASK_SOUNDBALL   = (1 << 7),
+	EM_SELMASK_NOSMALLOBJ  = (1 << 8),//不选择小物件
+	EM_SELMASK_NOBIGOBJ    = (1 << 9), //不选择大物件
+	EM_SELMASK_CLIENT_SELABLE = (1 << 10), //客户端的选取屏蔽
+	
+	EM_SELMASK_ALL = EM_SELMASK_MODEL|EM_SELMASK_MODELSET|EM_SELMASK_SPEEDTREE|EM_SELMASK_SFX|EM_SELMASK_OBJSET|
+				     EM_SELMASK_LOGICOBJ|EM_SELMASK_NODE |EM_SELMASK_SOUNDBALL,
+    EM_SELMASK_NONE = (1 << 31) // 强制关闭所有的选择过滤，所有物件都能选中
+	//0xffffffff & (~(EM_SELMASK_NOSMALLOBJ)) & (~(EM_SELMASK_NOBIGOBJ)),
+
+};
 /////////////////////////////////////////////////////////////////////////////////////////////////
 enum ModelDetailType
 {

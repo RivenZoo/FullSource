@@ -13719,6 +13719,116 @@ Exit0:
     return hResult;
 }
 
+HRESULT KG3DSceneSceneEditor::RenderToSingleOutputWnd(IEKG3DSceneOutputWnd * piSceneOutputWnd)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::ScenePosToScreenXYZ(D3DXVECTOR3 const & vScenePos, float & fScreenX, float & fScreenY, float & fZ)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::GetSceneParam(int * pLogicStartX, int * pLogicStartZ, float & fCellLength, float & fLogicalCellCmLength, float & fTerrainMinHeight, float & fPointPerAltitude, float & fAltitudeUnit)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::GetSelectModelList(const D3DXVECTOR2 & vPosScreen, BOOL bGetNearestOrAll, unsigned uMaxCount, IKG3DModel * pRetModelList[], unsigned * puRetRealCount)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::GetSelectModelList(const D3DXVECTOR3 & vRayOrig, const D3DXVECTOR3 & vRayDir, BOOL bGetNearestOrAll, unsigned uMaxCount, IKG3DModel * pRetModelList[], unsigned * puRetRealCount)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::GetSelectPosition(D3DXVECTOR2 const & vScale, D3DXVECTOR3 & vPosition, BOOL bNotIntersectTerrain = FALSE, BOOL bNotIntersectTObject = FALSE)
+{
+	return E_NOTIMPL;
+}
+
+IKG3DResourceBase * KG3DSceneSceneEditor::AddFullScreenEntity(LPCSTR strName, LPCSTR strAni, BOOL bLoop, BOOL bClearRT, DWORD dwClearColor, BOOL bAutoFit)
+{
+	return nullptr;
+}
+
+HRESULT KG3DSceneSceneEditor::RemoveFullScreenEntity(IKG3DResourceBase * pEntity)
+{
+	return E_NOTIMPL;
+}
+
+BOOL KG3DSceneSceneEditor::RayIntersection(const D3DXVECTOR3 & vSrc, const D3DXVECTOR3 & vNormalizedDir, FLOAT * pfRet, FLOAT fTestRange, BOOL bCheckTerrain)
+{
+	return 0;
+}
+
+HRESULT KG3DSceneSceneEditor::AddOutputWindow(int nOutPutWndID)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetActorOnFoliage(D3DXVECTOR3 & vActorPos, BOOL bIsMainActor)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetBatchProjectionCenter(const D3DXVECTOR3 & vPos)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetParabolaPosition(D3DXVECTOR3 * pVecPos, int nNodeNum)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetParabolaTexture(LPCSTR pTextureName)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetParabolaRenderEnable(BOOL bRenderEnale)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::EnablePostRenderEffect(PostRenderEffectType nType, BOOL bEnable)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::PreLoadResource(LPCTSTR cszFileName, BOOL bSync)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::UnPreLoadResource(LPCTSTR cszFileName)
+{
+	return E_NOTIMPL;
+}
+
+BOOL KG3DSceneSceneEditor::IsSREntityCreated(DWORD dwSREntityID)
+{
+	return 0;
+}
+
+BOOL KG3DSceneSceneEditor::BindEntityToSREntity(DWORD dwSREntityID, IKG3DResourceBase * pEntity)
+{
+	return 0;
+}
+
+HRESULT KG3DSceneSceneEditor::LoadSceneTestHeight()
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneSceneEditor::SetTrackBlurParam(D3DXVECTOR2 vec2TBCenter, float fTBSampleStrength, float fTBSampleDist)
+{
+	return E_NOTIMPL;
+}
+
 void KG3DSceneSceneEditor::EnableBlockBox(BOOL bEnable)
 {
 	g_bEnableBlockBox = bEnable;

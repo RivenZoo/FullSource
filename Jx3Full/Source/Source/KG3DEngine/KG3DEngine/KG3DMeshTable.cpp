@@ -95,3 +95,47 @@ Exit0:
 	}
 	return hRetCode;
 }
+
+HRESULT KG3DMeshTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, IKG3DResourceBase ** ppRetResource, bool bSyncLoad = true, ResNodeState ** res_node_state = NULL)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMeshTable::LoadAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMeshTable::UnloadAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMeshTable::LoadTagAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMeshTable::UnloadTagAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMeshTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, HANDLE * pRetHandle)
+{
+	return E_NOTIMPL;
+}
+
+MODEL_LOAD_STATE KG3DMeshTable::GetResourceLoadState(HANDLE hResourceHandle)
+{
+	return MODEL_LOAD_STATE();
+}
+
+HRESULT KG3DMeshTable::GetResourceByHandle(HANDLE hResourceHandle, IKG3DResourceBase ** ppRetResource)
+{
+	return E_NOTIMPL;
+}
+
+void KG3DMeshTable::CloseResourceHandle(HANDLE hResourceHandle)
+{
+}

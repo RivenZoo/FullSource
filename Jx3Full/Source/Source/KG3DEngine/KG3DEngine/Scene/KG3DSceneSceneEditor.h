@@ -1023,6 +1023,30 @@ private:
 
 public:
     virtual HRESULT UpdateSettings(DWORD dwSettingType);
+
+	// Inherited via KG3DSceneEditorBase
+	virtual HRESULT RenderToSingleOutputWnd(IEKG3DSceneOutputWnd * piSceneOutputWnd) override;
+	virtual HRESULT ScenePosToScreenXYZ(D3DXVECTOR3 const & vScenePos, float & fScreenX, float & fScreenY, float & fZ) override;
+	virtual HRESULT GetSceneParam(int * pLogicStartX, int * pLogicStartZ, float & fCellLength, float & fLogicalCellCmLength, float & fTerrainMinHeight, float & fPointPerAltitude, float & fAltitudeUnit) override;
+	virtual HRESULT GetSelectModelList(const D3DXVECTOR2 & vPosScreen, BOOL bGetNearestOrAll, unsigned uMaxCount, IKG3DModel * pRetModelList[], unsigned * puRetRealCount) override;
+	virtual HRESULT GetSelectModelList(const D3DXVECTOR3 & vRayOrig, const D3DXVECTOR3 & vRayDir, BOOL bGetNearestOrAll, unsigned uMaxCount, IKG3DModel * pRetModelList[], unsigned * puRetRealCount) override;
+	virtual HRESULT GetSelectPosition(D3DXVECTOR2 const & vScale, D3DXVECTOR3 & vPosition, BOOL bNotIntersectTerrain = FALSE, BOOL bNotIntersectTObject = FALSE) override;
+	virtual IKG3DResourceBase * AddFullScreenEntity(LPCSTR strName, LPCSTR strAni, BOOL bLoop, BOOL bClearRT, DWORD dwClearColor, BOOL bAutoFit) override;
+	virtual HRESULT RemoveFullScreenEntity(IKG3DResourceBase * pEntity) override;
+	virtual BOOL RayIntersection(const D3DXVECTOR3 & vSrc, const D3DXVECTOR3 & vNormalizedDir, FLOAT * pfRet, FLOAT fTestRange, BOOL bCheckTerrain) override;
+	virtual HRESULT AddOutputWindow(int nOutPutWndID) override;
+	virtual HRESULT SetActorOnFoliage(D3DXVECTOR3 & vActorPos, BOOL bIsMainActor) override;
+	virtual HRESULT SetBatchProjectionCenter(const D3DXVECTOR3 & vPos) override;
+	virtual HRESULT SetParabolaPosition(D3DXVECTOR3 * pVecPos, int nNodeNum) override;
+	virtual HRESULT SetParabolaTexture(LPCSTR pTextureName) override;
+	virtual HRESULT SetParabolaRenderEnable(BOOL bRenderEnale) override;
+	virtual HRESULT EnablePostRenderEffect(PostRenderEffectType nType, BOOL bEnable) override;
+	virtual HRESULT PreLoadResource(LPCTSTR cszFileName, BOOL bSync) override;
+	virtual HRESULT UnPreLoadResource(LPCTSTR cszFileName) override;
+	virtual BOOL IsSREntityCreated(DWORD dwSREntityID) override;
+	virtual BOOL BindEntityToSREntity(DWORD dwSREntityID, IKG3DResourceBase * pEntity) override;
+	virtual HRESULT LoadSceneTestHeight() override;
+	virtual HRESULT SetTrackBlurParam(D3DXVECTOR2 vec2TBCenter, float fTBSampleStrength, float fTBSampleDist) override;
 };
 
 
