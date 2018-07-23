@@ -1681,83 +1681,83 @@ struct PostRenderParams
 
 ////因为是编辑器用的``故把下面结构体移到IEEditorType.h里去 Modify by huangjinshou 2011-3-30
 // Editor Engine Option
-//struct KG3DEngineEditorOption
-//{
-//	//以下几项如果要客户端使用，则要放到上面的结构中
-//	//并改变用到的地方
-//	BOOL bUseLogical;
-//	BOOL bUseLogicalObject;
-//	BOOL bRenderTerrain;
-//	BOOL bRenderGround;
-//	BOOL bTerrDynamic;
-//	BOOL bUseMultiThreadLoad;
-//	BOOL bUseMultiThreadCull;//是否使用多线程裁剪
-//	BOOL bUseProgressMeshLOD;//是否使用模型LOD
-//	BOOL bShowTestDlg;
-//
-//	TCHAR szWaterConfigFile[MAX_PATH];	
-//
-//	//float fBloomExposure1;             // now use to exposure 1
-//	//float fBloomExposure2;             // now use to exposure 2
-//	//float fBloomRate;          // bloom 当前的变化率
-//	//float fBloomDelay;         // bloom 的过度时间
-//	//float fBloomGate;
-//	//float fBloomGaussCoefficient;     
-//	//int   nBloomSampleNum;
-//	//float fShockWavePower;
-//	//float fHueScale;
-//	//float fHueBias;
-//	//float fSaturationScale;
-//	//float fSaturationBias;
-//	//float fIntensityScale;
-//	//float fIntensityBias;
-//
-// //   float fDetailPower;
-// //   float fBlurPower;
-// //   float fBlurDistance;
-//
-//    //// color curve CMYK
-//    //int  nCurveStype;
-//    //BYTE CurveRed[256];
-//    //BYTE CurveGreen[256];
-//    //BYTE CurveBlue[256];
-//
-//    //float fKC;
-//    //float fKM;
-//    //float fKY;
-//
-// //   // god ray
-// //   int   nGodRaySampleNum;
-// //   float fGodRayDensity;
-// //   float fGodRayWeight;
-// //   float fGodRayDecay;
-// //   float fGodRayExposure;
-// //   float fLimitAngle;
-//
-// //   // ssao
-// //   int   nSSAOLevel;        
-// //   float fSSAOSampleRadius;
-// //   float fSSAODarkFact;
-// //   float fBlurWeight;
-//	//
-//	BOOL bStopSpecialElements;
-//
-//	////fog
-//	//float fFogDensityV;
-//	//float fSlopeThreshold;
-//	//float fHeightFalloff;
-//	//D3DXVECTOR4 vecFogcolor;
-//	// Shadow map
-//	BOOL bEnableAutoReLoadTexture;
-//
-//	INT  nFlySpeedX; //飞行模式X加速度
-//	INT  nFlySpeedY; //飞行模式Y加速度
-//	
-//	BOOL bEnableWireFrameModeTerrain;
-//#ifdef __cplusplus
-//	KG3DEngineEditorOption(){memset(this, 0, sizeof(KG3DEngineEditorOption));}
-//#endif
-//};
+struct KG3DEngineEditorOption
+{
+	//以下几项如果要客户端使用，则要放到上面的结构中
+	//并改变用到的地方
+	BOOL bUseLogical;
+	BOOL bUseLogicalObject;
+	BOOL bRenderTerrain;
+	BOOL bRenderGround;
+	BOOL bTerrDynamic;
+	BOOL bUseMultiThreadLoad;
+	BOOL bUseMultiThreadCull;//是否使用多线程裁剪
+	BOOL bUseProgressMeshLOD;//是否使用模型LOD
+	BOOL bShowTestDlg;
+
+	TCHAR szWaterConfigFile[MAX_PATH];	
+
+	float fBloomExposure1;             // now use to exposure 1
+	float fBloomExposure2;             // now use to exposure 2
+	float fBloomRate;          // bloom 当前的变化率
+	float fBloomDelay;         // bloom 的过度时间
+	float fBloomGate;
+	float fBloomGaussCoefficient;     
+	int   nBloomSampleNum;
+	float fShockWavePower;
+	float fHueScale;
+	float fHueBias;
+	float fSaturationScale;
+	float fSaturationBias;
+	float fIntensityScale;
+	float fIntensityBias;
+
+    float fDetailPower;
+    float fBlurPower;
+    float fBlurDistance;
+
+    //// color curve CMYK
+    int  nCurveStype;
+    BYTE CurveRed[256];
+    BYTE CurveGreen[256];
+    BYTE CurveBlue[256];
+
+    float fKC;
+    float fKM;
+    float fKY;
+
+ //   // god ray
+    int   nGodRaySampleNum;
+    float fGodRayDensity;
+    float fGodRayWeight;
+    float fGodRayDecay;
+    float fGodRayExposure;
+    float fLimitAngle;
+
+    // ssao
+    int   nSSAOLevel;        
+    float fSSAOSampleRadius;
+    float fSSAODarkFact;
+    float fBlurWeight;
+	//
+	BOOL bStopSpecialElements;
+
+	////fog
+	float fFogDensityV;
+	float fSlopeThreshold;
+	float fHeightFalloff;
+	D3DXVECTOR4 vecFogcolor;
+	// Shadow map
+	BOOL bEnableAutoReLoadTexture;
+
+	INT  nFlySpeedX; //飞行模式X加速度
+	INT  nFlySpeedY; //飞行模式Y加速度
+	
+	BOOL bEnableWireFrameModeTerrain;
+#ifdef __cplusplus
+	KG3DEngineEditorOption(){memset(this, 0, sizeof(KG3DEngineEditorOption));}
+#endif
+};
 /////////////////////////////////////////////////////////////////////////////////////////////////
 enum SkinShaderPass
 {

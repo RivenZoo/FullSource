@@ -17,6 +17,7 @@
 #include "IEKG3DAnimationController.h"
 #include "KG3DAnimationStruct.h"
 #include "KG3DFuctionCommand.h"
+#include <set>
 
 struct UpdateAnimationInfo
 {
@@ -78,7 +79,7 @@ public:
     virtual int GetPlayTime();
     virtual HRESULT RegistereEventHandler(IKG3DAnimationEventHandler* pHandler);
     virtual HRESULT UnregisterEventHandler(IKG3DAnimationEventHandler* pHandler);
-    virtual DWORD GetMotionExtraInfo();
+    virtual DWORD64 GetMotionExtraInfo();
     virtual void SetMotionExtraInfo(DWORD dwMotionExtraInfo);
     virtual IKG3DModel* GetModel();
 
