@@ -933,6 +933,50 @@ Exit0:
 	return E_FAIL;
 }
 
+HRESULT KG3DRegionInfoManagerTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, IKG3DResourceBase ** ppRetResource, bool bSyncLoad = true, ResNodeState ** res_node_state = NULL)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DRegionInfoManagerTable::LoadAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DRegionInfoManagerTable::UnloadAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DRegionInfoManagerTable::LoadTagAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DRegionInfoManagerTable::UnloadTagAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DRegionInfoManagerTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, HANDLE * pRetHandle)
+{
+	return E_NOTIMPL;
+}
+
+MODEL_LOAD_STATE KG3DRegionInfoManagerTable::GetResourceLoadState(HANDLE hResourceHandle)
+{
+	return MODEL_LOAD_STATE();
+}
+
+HRESULT KG3DRegionInfoManagerTable::GetResourceByHandle(HANDLE hResourceHandle, IKG3DResourceBase ** ppRetResource)
+{
+	return E_NOTIMPL;
+}
+
+void KG3DRegionInfoManagerTable::CloseResourceHandle(HANDLE hResourceHandle)
+{
+}
+
 KG3DRegionInfoManagerTable::~KG3DRegionInfoManagerTable()
 {
 	SAFE_DELETE(m_pMapExtraRecord);

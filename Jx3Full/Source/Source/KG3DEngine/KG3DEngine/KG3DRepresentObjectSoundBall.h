@@ -28,6 +28,10 @@ public:
 private:
 	const static int s_nVersion = 1;
 	map<UINT, SoundBallData*>m_mapSoundBallData;
+
+	// Inherited via IKG3DSoundBallTable
+	virtual HRESULT LoadFromFile(LPCTSTR strFileName, SoundDataBase * pData) override;
+	virtual HRESULT SaveToFile(LPCTSTR strFileName, SoundDataBase * pData) override;
 };
 
 struct SoundBallConfigInfo

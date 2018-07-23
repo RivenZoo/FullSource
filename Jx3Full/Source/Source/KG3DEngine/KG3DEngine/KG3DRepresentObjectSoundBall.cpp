@@ -563,6 +563,16 @@ Exit0:
 	;
 }
 
+HRESULT KG3DSoundBallDataTable::LoadFromFile(LPCTSTR strFileName, SoundDataBase * pData)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSoundBallDataTable::SaveToFile(LPCTSTR strFileName, SoundDataBase * pData)
+{
+	return E_NOTIMPL;
+}
+
 HRESULT KG3DRepresentObjectSoundBall::SetScaling(const D3DXVECTOR3* pScale)
 {
 	KG3DRepresentObject::SetScaling(pScale);

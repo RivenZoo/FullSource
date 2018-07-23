@@ -324,6 +324,50 @@ Exit0:
 	return hRetCode;
 }
 
+HRESULT KG3DTextureTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, IKG3DResourceBase ** ppRetResource, bool bSyncLoad = true, ResNodeState ** res_node_state = NULL)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTextureTable::LoadAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTextureTable::UnloadAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTextureTable::LoadTagAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTextureTable::UnloadTagAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTextureTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, HANDLE * pRetHandle)
+{
+	return E_NOTIMPL;
+}
+
+MODEL_LOAD_STATE KG3DTextureTable::GetResourceLoadState(HANDLE hResourceHandle)
+{
+	return MODEL_LOAD_STATE();
+}
+
+HRESULT KG3DTextureTable::GetResourceByHandle(HANDLE hResourceHandle, IKG3DResourceBase ** ppRetResource)
+{
+	return E_NOTIMPL;
+}
+
+void KG3DTextureTable::CloseResourceHandle(HANDLE hResourceHandle)
+{
+}
+
 HRESULT KG3DTextureTable::CreateTexture(unsigned int uWidth,
 										unsigned int uHeight,
 										D3DFORMAT format,

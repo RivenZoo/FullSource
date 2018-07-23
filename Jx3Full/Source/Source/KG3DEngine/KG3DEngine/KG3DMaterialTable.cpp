@@ -27,3 +27,47 @@ HRESULT KG3DMaterialTable::Init()
 	return hRetCode;
 }
 
+HRESULT KG3DMaterialTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, IKG3DResourceBase ** ppRetResource, bool bSyncLoad = true, ResNodeState ** res_node_state = NULL)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMaterialTable::LoadAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMaterialTable::UnloadAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMaterialTable::LoadTagAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMaterialTable::UnloadTagAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DMaterialTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, HANDLE * pRetHandle)
+{
+	return E_NOTIMPL;
+}
+
+MODEL_LOAD_STATE KG3DMaterialTable::GetResourceLoadState(HANDLE hResourceHandle)
+{
+	return MODEL_LOAD_STATE();
+}
+
+HRESULT KG3DMaterialTable::GetResourceByHandle(HANDLE hResourceHandle, IKG3DResourceBase ** ppRetResource)
+{
+	return E_NOTIMPL;
+}
+
+void KG3DMaterialTable::CloseResourceHandle(HANDLE hResourceHandle)
+{
+}
+
