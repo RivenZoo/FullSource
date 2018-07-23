@@ -208,6 +208,12 @@ private:
 	_Station m_cameraStation;
 	CStation m_StationHelper;
 
+
+	// Inherited via KG3DCamera
+	virtual HRESULT GetUp(D3DXVECTOR3 * pUp) override;
+
+	virtual HRESULT EnableHighPrecise(BOOL bEnable) override;
+
 };
 
 #endif //_INCLUDE_KG3DTRACKCAMERA_H_

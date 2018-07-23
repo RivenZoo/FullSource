@@ -758,6 +758,16 @@ Exit0:
 	return hResult;
 }
 
+HRESULT KG3DTrackCamera::GetUp(D3DXVECTOR3 * pUp)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DTrackCamera::EnableHighPrecise(BOOL bEnable)
+{
+	return E_NOTIMPL;
+}
+
 HRESULT KG3DTrackCamera::AddDistance(float fDistance)
 {
 	HRESULT hResult  = E_FAIL;

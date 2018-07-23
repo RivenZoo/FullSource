@@ -147,7 +147,10 @@ namespace KG_CUSTOM_HELPERS
 		virtual BOOL IsEnd()const{return m_it == m_Ct.end();}
 		virtual VOID StepForward(){++m_it;}
 		virtual VOID StepBackward(){--m_it;}
-		virtual	LPVOID	Cur(){return &(*m_it);}
+		virtual	LPVOID	Cur(){
+			// TODO: Fix this use c++ cast
+			return (LPVOID)(&(*m_it));
+		}
 		virtual VOID GoToEnd(){m_it = m_Ct.end();}
 		
 		virtual BOOL IsContentThisType(const type_info& info)const{return typeid(value_type) == info;}

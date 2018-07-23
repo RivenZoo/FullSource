@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include ".\kg3dscenetable.h"
+#include "kg3dscenetable.h"
 #include "kg3dscenesceneeditor.h"
 #include "kg3dscenemodeleditor.h"
 #include "kg3dsceneobjecteditor.h"
@@ -22,6 +22,50 @@ KG3DSceneTable::KG3DSceneTable(void)
 }
 
 KG3DSceneTable::~KG3DSceneTable(void)
+{
+}
+
+HRESULT KG3DSceneTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, IKG3DResourceBase ** ppRetResource, bool bSyncLoad, ResNodeState ** res_node_state)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneTable::LoadAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneTable::UnloadAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneTable::LoadTagAnimationFromFile(const char cszFileName[], void ** ppRet)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneTable::UnloadTagAnimation(void * pResource)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DSceneTable::LoadResourceFromFile(const char cszFileName[], unsigned uFileNameHash, unsigned uOption, HANDLE * pRetHandle)
+{
+	return E_NOTIMPL;
+}
+
+MODEL_LOAD_STATE KG3DSceneTable::GetResourceLoadState(HANDLE hResourceHandle)
+{
+	return MODEL_LOAD_STATE();
+}
+
+HRESULT KG3DSceneTable::GetResourceByHandle(HANDLE hResourceHandle, IKG3DResourceBase ** ppRetResource)
+{
+	return E_NOTIMPL;
+}
+
+void KG3DSceneTable::CloseResourceHandle(HANDLE hResourceHandle)
 {
 }
 

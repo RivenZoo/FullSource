@@ -135,4 +135,8 @@ private:
 	void SetPositionPrivate(const D3DXVECTOR3& Pos);
 	void SetLookAtPostionPrivate(const D3DXVECTOR3& Pos );
 	void SetUpDirectionPrivate(const D3DXVECTOR3& Up );
+
+	// Inherited via IEKG3DCamera
+	virtual HRESULT GetUp(D3DXVECTOR3 * pUp) override;
+	virtual HRESULT EnableHighPrecise(BOOL bEnable) override;
 };

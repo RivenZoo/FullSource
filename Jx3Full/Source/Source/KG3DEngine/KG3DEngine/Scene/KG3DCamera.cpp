@@ -663,6 +663,16 @@ void KG3DCamera::SetUpDirectionPrivate( const D3DXVECTOR3& Up )
 	m_DefaultUp = Up;
 }
 
+HRESULT KG3DCamera::GetUp(D3DXVECTOR3 * pUp)
+{
+	return E_NOTIMPL;
+}
+
+HRESULT KG3DCamera::EnableHighPrecise(BOOL bEnable)
+{
+	return E_NOTIMPL;
+}
+
 HRESULT KG3DCamera::UnBindScene()
 {
 	m_lpCurScene = NULL;

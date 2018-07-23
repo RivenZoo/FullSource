@@ -8,7 +8,7 @@
 #define TEXTURE_TYPE_DIFFUSE "*MAP_DIFFUSE"
 #define TEXTURE_TYPE_AMBIENT "*MAP_AMBIENT"
 
-#define MAX_SUBSET_COUNT 16
+// #define MAX_SUBSET_COUNT 16
 
 ////////////////////////////////////////////////////////////////////////////////
 class KG3DModel;
