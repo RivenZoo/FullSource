@@ -79,8 +79,8 @@ HRESULT	KG3DModelPointLight::RenderSelectMark(DWORD dwColor)
 	}
 	else if(m_eType == LIGHTTYPE_DIRECTION)
 	{
-		float Width = m_Scaling.x;
-		float Height = m_Scaling.z;
+		//float Width = m_Scaling.x;
+		//float Height = m_Scaling.z;
 
 		//g_cGraphicsTool.DrawRect()
 

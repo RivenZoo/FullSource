@@ -113,7 +113,7 @@ Exit0:
 HRESULT KG3DTerrainRepresentInfo::InitDefaultSfx()
 {
     HRESULT hResult = E_FAIL;
-    HRESULT hRetCode = E_FAIL;
+    //HRESULT hRetCode = E_FAIL;
     IIniFile *pFile = NULL;
     pFile = g_OpenIniFile(s_strGroundEffectConfigFile);
     KG_PROCESS_ERROR(pFile);

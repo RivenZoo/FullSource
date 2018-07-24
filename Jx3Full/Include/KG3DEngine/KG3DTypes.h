@@ -831,6 +831,7 @@ struct AnimationSoundTagInfo
     BOOL bFlag;
     float fVolume;
     DWORD dwReserved[8];
+	char strFileName[MAX_PATH];
 	AnimationSoundTagInfo()
 	{
 		soundType = SST_NONE;

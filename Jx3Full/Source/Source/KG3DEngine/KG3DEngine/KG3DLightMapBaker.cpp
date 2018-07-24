@@ -341,7 +341,7 @@ HRESULT KG3DLightMapBaker::FrameMove()
 HRESULT KG3DLightMapBaker::ComputeCubeMapForEnvLight(EnvLight* pEnv)
 {
 	HRESULT hr = E_FAIL;
-	KG3DRepresentObjectPVS* pPVS = (KG3DRepresentObjectPVS*)m_lpPvsScene->GetPvs();
+	//KG3DRepresentObjectPVS* pPVS = (KG3DRepresentObjectPVS*)m_lpPvsScene->GetPvs();
 	KG3DCamera vCamera;
 
 	KGLOG_PROCESS_ERROR(m_lpEnvLightTool);
@@ -872,7 +872,7 @@ HRESULT KG3DLightMapBaker::ProcessIndirectLighting()
 					KG3DModel* pModel = m_vecModel[i];
 					if(pModel->IsSecondUVExist())
 					{
-						pModel->EnableUseLightmap2(FALSE,0.7,0.8F);
+						pModel->EnableUseLightmap2(FALSE,0.7f,0.8F);
 					}
 				}
 				m_bNeedDisableLightmap2 = FALSE;
