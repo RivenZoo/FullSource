@@ -434,7 +434,8 @@ Many of these are just implemented as NX_INLINE calls to the C lib right now,
 but later we could replace some of them with some approximations or more
 clever stuff.
 */
-#ifndef __WIN32
+#if defined(_WIN32) || defined(__WIN32) || defined(WIN32)
+#else
 NX_INLINE bool NxMath::isFinite(NxF32 x)
 {
     return !!isfinite(x);
